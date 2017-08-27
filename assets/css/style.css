@@ -1,31 +1,42 @@
-.body{ 
+body{ 
     font-family: Fjalla One;
-    background-color: #d15224;
+    background-color: wheat;
     }
-    h1 {font-family: Fjalla One;
+    
+h1 {font-family: Fjalla One;
         color: white;
     }
     
     
     
-    .jumbotron{
+.jumbotron{
     font-family: Fjalla One;
-    color: white;
+    color: black;
     text-align: center;
     background-image:url("../img/CaptainAmerica.jpg");
     background-size: cover;
+    border-radius: 25%;
     
     
     }
-    .row{
+.jumbotron h1 {
+        background-color: wheat;
+        border-radius: 50%;
+    }
+
+.jumbotron p {
+        background-color: wheat;
+        border-radius: 50%;
+    }
+
+.row{
         margin: 10px 5px 10px 10px;
     
     }
-    .col-md-4{
+.col-md-4{
         text-align: center;
         font-size: 26px;
-        width: 50px;
-        height: 200px;
+
         background-color: #d15224;
         padding: 10px 10px 10px 10px;
         border: 0px 5px 10px 0px;
@@ -33,10 +44,10 @@
         
     }
     
-    #gametwo{
+#gametwo{
         background-color: #fdcd4f
     }
-    .col-md-2{
+.col-md-2{
         text-align: center;
  
     }

@@ -4,8 +4,7 @@
 	<title>
 		Punch a Nazi
 	</title>
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <!--bootstrap cdn-->
@@ -14,7 +13,8 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -23,15 +23,58 @@
 <body>
 <!-- <div class= "container"> -->
 <div class="jumbotron">
-  <h1 class="display-3">Punch a Nazi</h1>
-  <p class="lead">Punch all the Nazis!</p>
+  <h1 class="display-3" id="title" >Punch a Nazi</h1>
+  <p class="lead" id= "subtitle">Punch all the Nazis!</p>
  </p>
-  <p class="lead">
+  <div class="lead">
     <a class="btn btn-danger btn-lg" id = "clickme" role="button">Start Punching!</a>
-  </p>
+  </div>
 </div>
-<!--one day i won't use font-family: fantasy in a game 
-  BUT IT IS NOT THIS DAY!-->
+
+</div>
+
+<div class = "row">
+	<div class="col-md-2" id="nazi1">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">		
+	</div>
+	
+	<div class="col-md-2" id="empty">		
+	</div>	
+	
+	<div class="col-md-2" id="nazi2">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">		
+	</div>
+	
+	<div class="col-md-2" id="empty">		
+	</div>		
+	
+	<div class="col-md-2" id="nazi3">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">		
+	</div>
+</div>	
+
+
+<div class = "row">	
+	
+	<div class="col-md-2" id="nazi4">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">		
+	</div>
+
+	<div class="col-md-2" id="empty">		
+	</div>
+	
+	<div class="col-md-2" id="nazi5">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">	
+	</div>
+	
+	<div class="col-md-2" id="empty">		
+	</div>	
+
+	<div class="col-md-2" id="nazi6">
+		<img src="assets/img/Hitler.jpg" alt="Nazi" width="300" height="300">	
+	</div>	
+
+</div>
 
 <div class = "row">
 	<div class="col-md-4" id="gameone">
@@ -61,38 +104,6 @@
 			</div>
 	</div>
 
-</div>
-
-<div class = "row">
-	<div class="col-md-2" id="mystic">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			Hitler
-	</div>
-	
-	<div class="col-md-2" id="shards">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			Drumph
-	</div>
-	
-	<div class="col-md-2" id="gelfling">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			Battle Flag
-	</div>
-	<div class="col-md-2" id="aughra">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			nazi
-	</div>
-
-	<div class="col-md-2" id="gelfling">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			nazi
-	</div>
-	<div class="col-md-2" id="aughra">
-		<img src="assets/img/Hitler.jpg" alt="Nazi" width="200" height="200">
-			nazi
-	</div>	
-
-</div>
 
 <!-- </div> -->
 <script src="assets/javascript/app.js"></script>

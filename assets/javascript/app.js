@@ -6,6 +6,8 @@ var mysticNum = 0;
 var gelflingNum = 0; 
 var crystalNum = 0;
 var aughraNum = 0; 
+var nazioneNum = 0;
+var nazitwoNum = 0; 
 var score = 0; 
 var winCount = 0;
 var lossCount = 0;
@@ -32,35 +34,47 @@ gelflingNum = Math.floor((Math.random() *  12) + 1),
 crystalNum = Math.floor((Math.random() *  12) + 1),
 
 aughraNum = Math.floor((Math.random() *  12) + 1),
+
+nazioneNum = Math.floor((Math.random() *  12) + 1),
+
+nazitwoNum = Math.floor((Math.random() *  12) + 1),
 ];
 console.log(mysticNum);
 console.log(gelflingNum);
 console.log(crystalNum);
-console.log(aughraNum)
+console.log(aughraNum);
+console.log(nazioneNum);
+console.log(nazitwoNum)
 
-// an utterly ridiulous amount of code. i know there's a cleaner way to write this but everything i try breaks the world
 // asign random number values to each charater 	
 // and attach to each character div 
 	for (var i = 0; i < numberOptions.length; i++) {
-		var mysticImage = $("#mystic");
+		var mysticImage = $("#nazi1");
 		 mysticImage.attr("data-mysticvalue", mysticNum);
 	}
 
 	for (var i = 0; i < numberOptions.length; i++) {
-		var gelflingImage = $("#gelfling");
+		var gelflingImage = $("#nazi2");
 		 gelflingImage.attr("data-gelfingvalue", gelflingNum);
 	}
 
 	for (var i = 0; i < numberOptions.length; i++) {
-		var shardImage = $("#shards");
+		var shardImage = $("#nazi3");
 		 shardImage.attr("data-shardsvalue", crystalNum);
 	}
 
 	for (var i = 0; i < numberOptions.length; i++) {
-		var aughraImage = $("#aughra");
+		var aughraImage = $("#nazi4");
 		 aughraImage.attr("data-aughravalue", aughraNum);
 	}
- 
+  for (var i = 0; i < numberOptions.length; i++) {
+    var nazioneImage = $("#nazi5");
+     nazioneImage.attr("data-nazionevalue", nazioneNum);
+  }
+  for (var i = 0; i < numberOptions.length; i++) {
+    var nazitwoImage = $("#nazi6");
+     nazitwoImage.attr("data-nazitwovalue", nazitwoNum);
+  } 
 }
 
 startGame();
@@ -93,7 +107,7 @@ startGame();
 //append crystal magic wisdom love with new score for every char click
 function crystalPower () {
 
-$("#mystic").on("click", function() {
+$("#nazi1").on("click", function() {
 	var mysticNum = ($(this).attr("data-mysticvalue"));
     mysticNum = parseInt(mysticNum);
     
@@ -104,7 +118,7 @@ $("#mystic").on("click", function() {
     	checkWinLose ();
 });
 
-$("#gelfling").on("click", function() {
+$("#nazi2").on("click", function() {
 	var gelflingNum = ($(this).attr("data-gelfingvalue"));
     gelflingNum = parseInt(gelflingNum);
     
@@ -115,7 +129,7 @@ $("#gelfling").on("click", function() {
     	checkWinLose ();
 });
 
-$("#shards").on("click", function() {
+$("#nazi3").on("click", function() {
 	var crystalNum = ($(this).attr("data-shardsvalue"));
     crystalNum = parseInt(crystalNum);
     
@@ -126,7 +140,7 @@ $("#shards").on("click", function() {
         checkWinLose ();
 });
 
-$("#aughra").on("click", function() {
+$("#nazi4").on("click", function() {
 	var aughraNum = ($(this).attr("data-aughravalue"));
     aughraNum = parseInt(aughraNum);
     
@@ -137,6 +151,27 @@ $("#aughra").on("click", function() {
   		checkWinLose ();  
 });
 
+$("#nazi5").on("click", function() {
+  var nazioneNum = ($(this).attr("data-nazionevalue"));
+    nazioneNum = parseInt(nazioneNum);
+    
+    score += nazioneNum;
+
+    document.getElementById("score").innerHTML = score;
+     
+      checkWinLose ();  
+});
+
+$("#nazi6").on("click", function() {
+  var nazitwoNum = ($(this).attr("data-nazitwovalue"));
+    nazitwoNum = parseInt(nazitwoNum);
+    
+    score += nazitwoNum;
+
+    document.getElementById("score").innerHTML = score;
+     
+      checkWinLose ();  
+});
 };
 
 crystalPower ();
